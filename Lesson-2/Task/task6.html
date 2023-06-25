@@ -1,1 +1,57 @@
-З клавіатури вводяться вартість товару та кількість одиниць 3 товарів. Обчислити вартість кожного товару окремо та загальну вартість. Вивести чек (як у супермаркеті) використовуючи елементи розмітки.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task3</title>
+</head>
+<body>
+    <h2>
+        Задача 3
+    </h2>
+    <p>
+        З клавіатури вводяться вартість товару та кількість одиниць 3 товарів. 
+        Обчислити вартість кожного товару окремо та загальну вартість. 
+        Вивести чек (як у супермаркеті) використовуючи елементи розмітки.
+    </p>
+    <script>
+          // Вводимо необхідні дані
+          let priceProdact1 = parseFloat(prompt('Введіть вартість першого товару', '15.48'))
+          let quantityProdact1 = parseFloat(prompt('Введіть кількість першого товару', '5 шт'))
+
+          let priceProdact2 = parseFloat(prompt('Введіть вартість другого товару', '15.48'))
+          let quantityProdact2 = parseFloat(prompt('Введіть кількість другого товару', '5 шт'))
+
+          let priceProdact3 = parseFloat(prompt('Введіть вартість третього товару', '15.48'))
+          let quantityProdact3 = parseFloat(prompt('Введіть кількість третього товару', '5 шт'))
+
+        
+        // Знаходимо результат
+        let sum1 = priceProdact1 * quantityProdact1
+        let sum2 = priceProdact2 * quantityProdact2
+        let sum3 = priceProdact3 * quantityProdact3
+        let sumSum = sum1 + sum2 + sum3
+        
+        // Виводимо результат
+        document.write(`
+                       ТОВАРНИЙ ЧЕК <br>
+        товар №1 <br>
+            кількість  ${quantityProdact1} <br>
+                   *   ${priceProdact1}<br>
+            сума       ${sum1.toFixed(2)}<br>
+        
+        товар №2 <br>
+            кількість  ${quantityProdact2} <br>
+                   *   ${priceProdact2}<br>
+            cума       ${sum2.toFixed(2)}<br>
+        
+        товар №3 <br>
+            кількість  ${quantityProdact3} <br>
+                   *   ${priceProdact3}<br>
+            сума       ${sum3.toFixed(2)}<br>
+        --------------------------<br>
+        Загалом на суму - ${sumSum.toFixed(2)}<br>
+        `)
+    </script>
+</body>
+</html>
