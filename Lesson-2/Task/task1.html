@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script src="js/js-task1.js"></script> -->
+    <h1>Задача 1</h1>
+    <p>
+        Знайти суму, добуток та частку двох дійсних чисел.
+        Результат вивести у формі таблиці
+    </p>
+
+    <script>
+        // Вводимо необхідні дані
+        let a = parseFloat(prompt('Введіть дійсне число А', '0.00'))
+        let b = parseFloat(prompt('Введіть дійсне число B', '0.00'))
+        
+        // Знаходимо результат
+        let sum = a + b
+        let multiplication = a * b
+        let division = a / b
+
+        // Виводимо результат
+        console.log(`        
+        Сума    А + В = ${sum}  <br>
+        Добуток А * В = ${multiplication}  <br>
+        Частка  А в В = ${division} 
+        `)
+
+    </script>
+</body>
+</html>
