@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Задача 4</h2>
+    <p>
+        Дано довжину у сантиметрах. Визначати скільки це метрів і кілометрів.
+
+    </p>
+
+    <script>
+        // Вводимо необхідні дані
+        let longSm = parseFloat(prompt('Введіть довжину у сантиметрах', '15.48'))
+              
+      
+      // Знаходимо результат
+      let longM = longSm / 100
+      let longKm = longM / 1000
+      
+      // Виводимо результат
+      document.write(`
+      Ви ввели довжину в сантіметрах  -  ${longSm}<br>
+      
+      В метрах це                     -  ${longM.toFixed(4)}<br>
+      В километрах                    -  ${longKm.toFixed(7)}
+      `)
+  </script>
+</body>
+</html>

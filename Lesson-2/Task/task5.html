@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Задача 5</h2>
+    <p>
+        Дано кількість секунд, що пройшла від початку доби. Визначити скільки це годин і хвилин.
+    </p>
+    <script>
+        // Вводимо необхідні дані
+        let quantitySecunden = parseInt(prompt('Введіть кількість секунд від початку доби', '1300'))
+
+        // Знаходимо результат
+
+        let quantityMinuten = quantitySecunden / 60
+        let quantityStunden = quantitySecunden / 3600
+      
+      // Виводимо результат
+      document.write(`
+      Ви ввели кількість секунд від початку доби  -  ${quantitySecunden}<br>
+      
+      В мінутах це                     -  ${quantityMinuten}<br>
+      В часах                          -  ${quantityStunden.toFixed(2)}
+      `)
+  </script>
+</body>
+</html>
+
