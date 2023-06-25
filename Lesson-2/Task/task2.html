@@ -6,6 +6,25 @@
     <title>task2</title>
 </head>
 <body>
-    
+    <h2>Задача 2</h2>
+    <p>
+        Дано рік народження (дата: 1 січня) та поточний рік. 
+        Знайти кількість років.
+    </p>
+    <script>
+         // Вводимо необхідні дані
+        let birthYear = parseInt(prompt('Введіть рік народження', '1988'))
+        
+        
+        // Знаходимо результат
+        let nowAge = 2023 - birthYear
+        
+        // Виводимо результат
+        document.write(`
+        Ви народились ${birthYear}<br>
+        Зараз Вам ${nowAge} 
+        `)
+
+    </script>
 </body>
 </html>
