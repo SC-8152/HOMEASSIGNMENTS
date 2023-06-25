@@ -15,19 +15,36 @@
 
     <script>
         // Вводимо необхідні дані
-        let a = parseFloat(prompt('Введіть дійсне число А', '0.00'))
-        let b = parseFloat(prompt('Введіть дійсне число B', '0.00'))
+        let number1 = parseFloat(prompt('Введіть дійсне число А', '0.00'))
+        let number2 = parseFloat(prompt('Введіть дійсне число B', '0.00'))
         
         // Знаходимо результат
-        let sum = a + b
-        let multiplication = a * b
-        let division = a / b
+        let sum = number1 + number2
+        let multiplication = number1 * number2
+        let division = number1 / number2
 
         // Виводимо результат
-        document.write(`        
-        Сума    А + В = ${sum}  <br>
-        Добуток А * В = ${multiplication}  <br>
-        Частка  А в В = ${division} 
+        document.write(`
+        Ви ввели ${number1}, та ${number2} <br>
+        <table border = "2px">
+            <tr>
+                <th>Шуканий результат</th>
+                <th>Отримані значеня</th>
+            </tr>
+            <tr>
+                <th>Сума</th>
+                <td>${sum}</td>
+            </tr>
+            <tr>
+                <th>Добуток</th>
+                <td>${multiplication}</td>
+            </tr>
+            <tr>
+                <th>Частка</th>
+                <td>${division}</td>
+            </tr>
+        </table>
+         
         `)
 
     </script>
