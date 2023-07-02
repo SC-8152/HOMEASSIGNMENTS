@@ -30,7 +30,9 @@
         Вартість одиниці товару  -  ${priceProdact}<br>
         Кількість товару         -  ${quantityProdact}<br>
         
-        Загальна вартість товару -  ${sum.toFixed(2)}<br>
+        // Загальна вартість товару -  ${sum.toFixed(2)}<br>
+        //                      ПДВ -  ${vat.toFixed(2)}<br>
+        Загальна вартість товару -  ${Math.round(sum)}<br>
                              ПДВ -  ${vat.toFixed(2)}
         `)
     </script>

@@ -1,3 +1,33 @@
-Знайти суму випадкового номера місяця (від 1 до 12) та випадкового номера дня (від 0 до 6).
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Завдання 7</h1>
 
-Math.floor(Math.random() * (max - min + 1)) + min;
+    <h2>
+        Знайти суму випадкового номера місяця (від 1 до 12)
+        та випадкового номера дня (від 0 до 6).
+
+    </h2>
+    <script>
+
+let randomMonth = parseInt(Math.floor(Math.random() * (11)+1))
+let randomDay = parseInt(Math.floor(Math.random() * (6)))
+
+let mySum = randomMonth + randomDay
+
+// Виводимо результат
+document.write(`
+            Випадковий місяць ${randomMonth} <br>
+            Випадковий день ${randomDay} <br>
+            
+            Сума ${mySum}
+`)
+    </script>
+</body>
+</html>
