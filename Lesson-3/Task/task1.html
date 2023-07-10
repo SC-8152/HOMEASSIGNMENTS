@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Задача 1</h1>
+    <p>
+        З клавіатури вводяться імена двох дітей та кількість у них цукерок. 
+        Вивести не екран ім’я тієї дитини, 
+        у якої кількість цукерок є більшою, 
+        або вивести, що кількість однакова.    </p>
+
+    <script>
+        // Вводимо необхідні дані
+        let nameChilde1 = prompt('Введіть імя першої дитини')
+        let quantityApple1 = parseInt(prompt('Введіть кількість яблук', '2'))
+        let nameChilde2 = prompt('Введіть імя першої дитини')
+        let quantityApple2 = parseInt(prompt('Введіть кількість яблук', '2'))
+        
+        // Знаходимо результат
+        // Виводимо результат
+        if (quantityApple1 === quantityApple2) 
+            document.write(`Цукерок однакова кількість`)
+            else if (quantityApple1 < quantityApple2)
+                document.write(`Цукерок у ${nameChilde2} більше`)
+            else
+                document.write(`Цукерок у ${nameChilde1} більше`)
+        
+        
+    </script>
+
+
+</body>
+</html>
