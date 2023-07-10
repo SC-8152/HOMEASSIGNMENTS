@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Задача 6</h1>
+    <p>
+        З клавіатури вводиться номер дня тижня. Вивести на екран назву дня.   </p>
+
+    <script>
+        // Вводимо необхідні дані
+        
+        let weekNumber = prompt('Введіть номер дня тижня від 1 до 7', '5')
+        
+        
+        
+        // Знаходимо результат
+        //  Виводимо результат
+        
+      
+      let weekName
+      switch (weekNumber) {
+        case '1':
+          weekName = 'понеділок'
+          break
+        case '2':
+          weekName = 'вівторок'
+          break
+        case '3':
+          weekName = 'середа'
+          break
+        case '4':
+          weekName = 'четвер'
+          break
+        case '5':
+          weekName = 'пятниця'
+          break
+        case '6':
+          weekName = 'субота'
+          break
+        case '7':
+          weekName = 'неділя'
+          break
+      }
+      
+      
+      document.write(`${weekNumber} - ${weekName}`)
+        
+    </script>
+
+
+</body>
+</html>

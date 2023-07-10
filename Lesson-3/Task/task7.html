@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Задача 7</h1>
+    <p>
+      З клавіатури вводиться номер місяця. Вивести до якої пори він відноситься   </p>
+
+    <script>
+        // Вводимо необхідні дані
+        
+        let monthNumber = prompt('Введіть номер дня тижня від 1 до 7', '5')
+        
+        
+        
+        // Знаходимо результат
+        //  Виводимо результат
+        
+      
+      let monthName
+      switch (monthNumber) {
+        case '1':
+        case '2':
+        case '12':  
+          monthName = 'Зима'
+          break
+        case '3':
+        case '4':
+        case '5':
+          monthName = 'Весна'
+          break
+        case '6':
+        case '7':
+        case '8':
+         monthName = 'Літо'
+          break
+        case '9':
+        case '10':
+        case '11':
+          monthName = 'Осінь'
+          break
+        }
+      
+      
+      document.write(`${monthNumber} - ${monthName}`)
+        
+    </script>
+
+
+</body>
+</html>
